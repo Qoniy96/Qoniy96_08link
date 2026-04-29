@@ -1,0 +1,56 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Roboto', Arial, sans-serif; background: #fff; color: #202124; }
+
+/* Navigation */
+header { height: 60px; padding: 0 20px; }
+nav { display: flex; justify-content: flex-end; align-items: center; height: 100%; gap: 15px; }
+.nav-link { text-decoration: none; color: rgba(0,0,0,0.87); font-size: 13px; }
+.nav-link:hover { text-decoration: underline; }
+
+.apps-icon { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; cursor: pointer; }
+.apps-icon:hover { background: #f1f3f4; }
+.apps-icon svg { width: 24px; height: 24px; fill: #5f6368; }
+
+.btn-signin { background: #1a73e8; color: #fff; border: none; padding: 9px 23px; border-radius: 4px; font-weight: 500; cursor: pointer; margin-left: 10px; }
+.btn-signin:hover { background: #1b66c9; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+
+/* Wivne Logo Colors */
+.logo { font-size: 90px; font-weight: 500; margin-bottom: 30px; letter-spacing: -4px; user-select: none; }
+.color-blue { color: #4285F4; }
+.color-red { color: #EA4335; }
+.color-yellow { color: #FBBC05; }
+.color-green { color: #34A853; }
+.tilt { display: inline-block; transform: rotate(-15deg); }
+
+/* Search Box */
+.search-container { display: flex; flex-direction: column; align-items: center; padding-top: 100px; }
+.search-form { width: 90%; max-width: 584px; }
+.search-input-area { 
+    display: flex; align-items: center; border: 1px solid #dfe1e5; 
+    padding: 8px 15px; border-radius: 24px; height: 46px;
+}
+.search-input-area:hover, .search-input-area:focus-within { 
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28); border-color: rgba(0,0,0,0); 
+}
+.search-input-area input { flex: 1; border: none; outline: none; font-size: 16px; padding: 0 10px; }
+.search-icon svg, .mic-icon svg { width: 20px; height: 20px; fill: #9aa0a6; display: block; }
+
+/* Buttons */
+.buttons { margin-top: 25px; display: flex; justify-content: center; gap: 12px; }
+.buttons button { 
+    background: #f8f9fa; border: 1px solid #f8f9fa; padding: 10px 16px; 
+    border-radius: 4px; font-size: 14px; color: #3c4043; cursor: pointer;
+}
+.buttons button:hover { border: 1px solid #dadce0; color: #202124; box-shadow: 0 1px 1px rgba(0,0,0,0.1); }
+
+/* Language */
+.language-info { margin-top: 28px; font-size: 13px; }
+.language-info a { color: #1a0dab; text-decoration: none; margin-left: 5px; }
+
+/* Footer */
+footer { background: #f2f2f2; position: fixed; bottom: 0; width: 100%; border-top: 1px solid #dadce0; }
+.footer-row-1 { padding: 15px 30px; border-bottom: 1px solid #dadce0; color: rgba(0,0,0,0.54); font-size: 15px; }
+.footer-row-2 { display: flex; justify-content: space-between; padding: 0 20px; flex-wrap: wrap; }
+.f-links { display: flex; }
+.f-links a { text-decoration: none; color: #70757a; padding: 15px; font-size: 14px; }
+.f-links a:hover { text-decoration: underline; }
