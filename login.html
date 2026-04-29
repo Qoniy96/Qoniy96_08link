@@ -2,36 +2,34 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Đăng nhập Nmail - Wivne</title>
+    <title>Đăng nhập Nmail</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f2f2f2; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .login-card { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 400px; text-align: center; }
-        .logo { font-size: 32px; font-weight: bold; margin-bottom: 10px; }
-        .logo span { color: #4285F4; } /* Tông màu Wivne */
-        h2 { font-weight: 400; margin-bottom: 20px; }
-        .input-group { margin-bottom: 15px; position: relative; text-align: left; }
-        input { width: 100%; padding: 12px; border: 1px solid #dadce0; border-radius: 4px; font-size: 16px; box-sizing: border-box; }
-        .suffix { position: absolute; right: 12px; top: 12px; color: #70757a; pointer-events: none; }
-        .btn-next { background: #1a73e8; color: white; border: none; padding: 10px 24px; border-radius: 4px; font-weight: bold; cursor: pointer; float: right; margin-top: 20px; }
-        .create-account { color: #1a73e8; text-decoration: none; float: left; margin-top: 25px; font-size: 14px; }
+        .login-box { 
+            width: 450px; margin: 100px auto; padding: 40px; 
+            border: 1px solid #dadce0; border-radius: 8px; text-align: center; 
+        }
+        .input-field { width: 100%; padding: 13px; margin: 10px 0; border: 1px solid #dadce0; border-radius: 4px; font-size: 16px; }
+        .suffix { display: block; text-align: right; color: #70757a; font-size: 13px; margin-top: -35px; margin-right: 10px; margin-bottom: 20px; }
     </style>
 </head>
 <body>
-    <div class="login-card">
-        <div class="logo"><span>W</span>ivne</div>
-        <h2>Đăng nhập</h2>
-        <p>Sử dụng tài khoản Nmail của bạn</p>
-        <br>
-        <form action="nmail.html">
-            <div class="input-group">
-                <input type="text" placeholder="Tên người dùng" required>
-                <span class="suffix">@qoniymail.com</span>
+    <div class="login-box">
+        <div class="logo-text" style="font-size: 35px;">
+            <span class="blue">W</span>ivne <span style="color:#5f6368; font-weight: normal;">Nmail</span>
+        </div>
+        <h2 style="margin: 20px 0; font-weight: 400;">Đăng nhập</h2>
+        <p>Sử dụng tài khoản @qoniymail.com</p>
+        
+        <form action="nmail.html" method="GET" style="text-align: left; margin-top: 30px;">
+            <input type="text" class="input-field" placeholder="Tên người dùng" required>
+            <span class="suffix">@qoniymail.com</span>
+            <input type="password" class="input-field" placeholder="Mật khẩu" required>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 40px;">
+                <a href="#" style="color:#1a73e8; text-decoration:none; font-weight:bold;">Tạo tài khoản</a>
+                <button type="submit" class="btn-login" style="border:none; cursor:pointer;">Tiếp theo</button>
             </div>
-            <div class="input-group">
-                <input type="password" placeholder="Mật khẩu" required>
-            </div>
-            <a href="#" class="create-account">Tạo tài khoản</a>
-            <button type="submit" class="btn-next">Tiếp theo</button>
         </form>
     </div>
 </body>
