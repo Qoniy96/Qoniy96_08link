@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả tìm kiếm - Wivne</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .result-item { margin: 20px 0 30px 150px; max-width: 650px; }
+        .result-item a { font-size: 20px; color: #1a0dab; text-decoration: none; }
+        .result-item p { color: #4d5156; line-height: 1.5; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div style="display: flex; align-items: center; padding: 20px; border-bottom: 1px solid #dfe1e5;">
+        <a href="index.html" class="logo-text" style="font-size: 30px; margin-right: 30px;">
+            <span class="blue">W</span><span class="red">i</span><span class="yellow">v</span><span class="green">n</span><span class="red tilt">e</span>
+        </a>
+        <form action="results.html" method="GET" style="flex: 1; max-width: 600px;">
+            <div class="search-box" style="margin-top: 0;">
+                <input type="text" id="res-input" name="q">
+            </div>
+        </form>
+    </div>
+
+    <div id="results-area">
+        <!-- Kết quả giả lập -->
+        <div class="result-item">
+            <small>https://wivne.com › about</small><br>
+            <a href="#">Wivne Search: Công cụ tìm kiếm của người Việt</a>
+            <p>Wivne giúp bạn tìm kiếm thông tin nhanh chóng, bảo mật và tích hợp hệ sinh thái Nmail miễn phí.</p>
+        </div>
+        <div class="result-item">
+            <small>https://nmail.qoniymail.com › login</small><br>
+            <a href="login.html">Đăng nhập Nmail - Tài khoản @qoniymail.com</a>
+            <p>Truy cập hộp thư điện tử Nmail để gửi và nhận thư với đuôi @qoniymail.com chuyên nghiệp.</p>
+        </div>
+    </div>
+
+    <script>
+        // Hiển thị từ khóa lên ô input
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('res-input').value = params.get('q');
+    </script>
+</body>
+</html>
